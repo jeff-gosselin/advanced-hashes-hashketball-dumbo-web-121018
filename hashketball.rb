@@ -209,6 +209,12 @@ def most_points_scored
       top_scorer = player
     end
   end
+  
+  game_hash[:away][:players].each do |player, stats|
+    if stats[:points] == most_points
+      top_scorer = player
+    end
+  end
   top_scorer
 end
 
