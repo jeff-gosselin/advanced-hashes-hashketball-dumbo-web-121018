@@ -196,6 +196,7 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
+  top_scorer = nil
   points = game_hash.map do |site, attributes| 
     attributes[:players].map do |player, stats|
       stats[:points]
@@ -205,9 +206,10 @@ def most_points_scored
   
   game_hash[:home][:players].each do |player, stats|
     if stats[:points] == most_points
-      return player
+      top_scorer = player
     end
   end
+  top_scorer
 end
 
 
