@@ -201,7 +201,6 @@ def most_points_scored
       stats[:points]
     end
   end
-  
   most_points = points.flatten.max
 end
 
