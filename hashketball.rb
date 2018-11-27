@@ -198,7 +198,8 @@ end
 def most_points_scored
   game_hash.map do |site, attributes| 
     attributes[:players].map do |player, stats|
-      stats[:points]
+      
+      stats[:points].max
     end
   end
 end
