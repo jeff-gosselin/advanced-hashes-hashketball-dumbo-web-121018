@@ -204,7 +204,6 @@ def most_points_scored
   most_points = points.flatten.max
   
   game_hash[:home][:players].each do |player, stats|
-  
     if stats[:points] == most_points
       player
   end
