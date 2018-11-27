@@ -205,7 +205,6 @@ def most_points_scored
   
   game_hash[:home][:players].each do |player, stats|
     if stats[:points] == most_points
-      binding.pry
       return player
     end
   end
