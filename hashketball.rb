@@ -196,7 +196,7 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-  top_scorer = nil
+  top_scorer = "???"
   points = game_hash.map do |site, attributes| 
     attributes[:players].map do |player, stats|
       stats[:points]
