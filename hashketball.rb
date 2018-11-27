@@ -202,6 +202,10 @@ def most_points_scored
     end
   end
   most_points = points.flatten.max
+  
+  game_hash[:home][:players].each do |player, stats|
+    binding.pry
+  end
 end
 
 
